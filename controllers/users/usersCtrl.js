@@ -262,11 +262,11 @@ const unBlockUserCtrl = expressAsyncHandler(async (req, res) => {
 //------------------------------
 
 var transport = nodemailer.createTransport({
-  host: 'smtp.mailtrap.io',
-  port: 2525,
+  host: '',
+  port: ,
   auth: {
-    user: '2b550db542d792',
-    pass: '6912c91fd9df64',
+    user: '',
+    pass: '',
   },
 });
 
@@ -274,10 +274,10 @@ const generateVerificationTokenCtrl = expressAsyncHandler(async (req, res) => {
   try {
     //build your message
     const msg = {
-      to: 'e.tweneboah1@gmail.com',
-      from: 'twentekghana@gmail.com',
-      subject: 'My Node js email sending',
-      text: 'Hey check me out for this email',
+      to: '',
+      from: '',
+      subject: '',
+      text: '',
     };
 
     await transport.sendMail(msg);
